@@ -1,7 +1,6 @@
-# Tarea2_FOR_LOOP
-##Ejercicio 1: Las mp tienen los nombres de las personas a las cuales est√°n asociadas,
-##realice una funci√≥n que cuente cu√°ntos ni√±os hay por cada una, y entregue una estad√≠stica
-##de cu√°ntos ni√±os hay por mp.
+##Ejercicio 1: Las mp tienen los nombres de las personas a las cuales est·n asociadas,
+##realice una funciÛn que cuente cu·ntos niÒos hay por cada una, y entregue una estadÌstica
+##de cu·ntos niÒos hay por mp.
 
 
 rm(list=ls())
@@ -16,35 +15,35 @@ mp1<-0
 mp2<-0
 mp3<-0
 mp4<-0
-ni√±os1<-0
-ni√±os2<-0
-ni√±os3<-0
+niÒos1<-0
+niÒos2<-0
+niÒos3<-0
 for (i in 1:length(listaDocumentos)){
   if(listaDocumentos[[i]][1]=="mp"){
     if(length(listaDocumentos[[i]])==2){
       mp1<-mp1+1
-      ni√±os1<-ni√±os1+length(listaDocumentos[[i]])-1
+      niÒos1<-niÒos1+length(listaDocumentos[[i]])-1
     }else if(length(listaDocumentos[[i]])==3){
       mp2<-mp2+1
-      ni√±os2<-length(listaDocumentos[[i]])-1
+      niÒos2<-length(listaDocumentos[[i]])-1
     }else if(length(listaDocumentos[[i]])==4){
       mp3<-mp3+1
-      ni√±os3<-length(listaDocumentos[[i]])-1
+      niÒos3<-length(listaDocumentos[[i]])-1
     }else{
    mp4<-mp4+1
     
     }}}
-Aux<-c(mp1,ni√±os1,mp2,ni√±os2,mp3,ni√±os3,mp4)
+Aux<-c(mp1,niÒos1,mp2,niÒos2,mp3,niÒos3,mp4)
 return(Aux)                        }
-ni√±os<-Ejercicio1(listaDocumentos)
+niÒos<-Ejercicio1(listaDocumentos)
     
-print(paste("Se cuentan con",ni√±os[1],"mp de", ni√±os[2],"ni√±os" ))
-print(paste("Se cuentan con",ni√±os[3],"mp de", ni√±os[4],"ni√±os" ))
-print(paste("Se cuentan con",ni√±os[5],"mp de", ni√±os[6],"ni√±os" ))
-print(paste("Se cuentan con",ni√±os[7],"mp de m√°s de", ni√±os[6],"ni√±os" ))
+print(paste("Se cuentan con",niÒos[1],"mp de", niÒos[2],"niÒos" ))
+print(paste("Se cuentan con",niÒos[3],"mp de", niÒos[4],"niÒos" ))
+print(paste("Se cuentan con",niÒos[5],"mp de", niÒos[6],"niÒos" ))
+print(paste("Se cuentan con",niÒos[7],"mp de m·s de", niÒos[6],"niÒos" ))
 
-##Ejercicio 2:  Los oficios est√°n compuestos por el c√≥digo al cual pertenecen, construya
-##una funci√≥n que almacene los c√≥digos y las tem√°ticas a las que est√°n asociadas.
+##Ejercicio 2:  Los oficios est·n compuestos por el cÛdigo al cual pertenecen, construya
+##una funciÛn que almacene los cÛdigos y las tem·ticas a las que est·n asociadas.
 ##listaDocumentos se ejecuta nuevamente  en caso que el codigo se copie en otra ventana, este funcione.
 
 listaDocumentos <- list(c("mp","Juan","Christofer"),c("of","av01","ampr"),c("of","av01","ante"),
@@ -86,7 +85,7 @@ Ejercicio2<-function(listaDocumentos){
 Respuesta2<-Ejercicio2(listaDocumentos)
 print(Respuesta2)
 
-##Ejercicio 3(2 ptos): Construya una funci√≥n que act√∫e de juez y retorne aprobada o reprobada
+##Ejercicio 3(2 ptos): Construya una funciÛn que act˙e de juez y retorne aprobada o reprobada
 ##para los diferentes oficios, y entregue la cantidad que hay de cada una
 ##listaDocumentos se ejecuta nuevamente  en caso que el codigo se copie en otra ventana, este funcione.
 
